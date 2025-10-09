@@ -25,13 +25,13 @@ jobs:
       - name: Install Cypress
         run: npx cypress install
 
-      # - name: Run Cypress tests and record
-      #   env:
-      #     CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-      #   run: npm run cy:run
+      - name: Run Cypress tests and record
+        # env:
+        #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        run: npm run cy:run
 
-      - name: Generate Mochawesome report (optional)
-        if: success() || failure()
-        run: |
-          npx mochawesome-merge cypress/results/*.json > cypress/results/report.json
-          npx marge cypress/results/report.json --reportDir cypress/results/report
+      # - name: Generate Mochawesome report (optional)
+      #   if: success() || failure()
+      #   run: |
+      #     npx mochawesome-merge cypress/results/*.json > cypress/results/report.json
+      #     npx marge cypress/results/report.json --reportDir cypress/results/report
