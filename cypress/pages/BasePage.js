@@ -14,8 +14,8 @@ class BasePage {
   openTheMenuItem(title) {
     this.getNavItems()
       .should("exist")
-      .contains(title)
       .should("be.visible")
+      .contains(title)
       .click();
     return this;
   }
