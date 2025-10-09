@@ -68,20 +68,25 @@ class MainPage extends BasePage {
   checkActiveTabInAccordion(index) {
     this.getAccordion()
       .eq(index)
-      .should("have.attr", "aria-selected", "true")
+      .should("exist")
+      .and("have.attr", "aria-selected", "true")
       .and("have.attr", "data-state", "active");
   }
 
   checkTabText(expectedText) {
-    cy.get("p").contains(expectedText).parent().should("be.visible");
+    cy.get("p")
+      .contains(expectedText)
+      .should("exist")
+      .parent()
+      .should("be.visible");
   }
 
   selectRole(role) {
-    return cy.contains(role);
+    return cy.contains(role).should("exist").click();
   }
 
   clickCallAgentBtn() {
-    this.getCallAgentBtn().click();
+    this.getCallAgentBtn().should("exist").click();
     return this;
   }
 

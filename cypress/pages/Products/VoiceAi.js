@@ -6,7 +6,7 @@ class VoiceAi extends BasePage {
   }
 
   clickStartBuildingBtn() {
-    this.getStartBuildingBtn().click();
+    this.getStartBuildingBtn().should("be.visible").click();
     return this;
   }
 }

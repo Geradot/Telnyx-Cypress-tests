@@ -12,7 +12,7 @@ class BasePage {
   }
 
   openTheMenuItem(title) {
-    this.getNavItems().contains(title).click();
+    this.getNavItems().contains(title).should("be.visible").click();
     return this;
   }
 

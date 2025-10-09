@@ -37,13 +37,13 @@ describe("Testing Telnyx.com", () => {
       .should(...matchToSelectedTab);
     MainPage.checkTextarea("Good morning");
     MainPage.getPlayAudioBtn().should("be.visible");
-    MainPage.getRoleSelect().click();
-    MainPage.selectRole(roles[2]).click();
+    MainPage.getRoleSelect().should("be.visible").click();
+    MainPage.selectRole(roles[2]);
     MainPage.checkTextarea("customer service team");
   });
 
   it("TC-3: Clicking the 'Contact us' link opens it", () => {
-    MainPage.getContactUsLink(pages["contact us"]).click();
+    MainPage.getContactUsLink(pages["contact us"]).should("be.visible").click();
     MainPage.checkUrlContains(pages["contact us"]);
   });
 
@@ -55,14 +55,14 @@ describe("Testing Telnyx.com", () => {
     MainPage.checkTabText(firstValue.description);
 
     const [lastKey, lastValue] = Object.entries(capabilities).at(-1);
-    MainPage.findTheTab(lastValue.title).click();
+    MainPage.findTheTab(lastValue.title).should("be.visible").click();
     MainPage.checkActiveTabInAccordion(+lastKey);
     MainPage.checkTabText(lastValue.description);
   });
 
   it("TC-5: Clicking on the arrow reveals the next code example", () => {
     MainPage.checkExampleCodeIsVisible(MainPage.getFirstExampleCode);
-    MainPage.getRightArrow().click();
+    MainPage.getRightArrow().should("be.visible").click();
     MainPage.checkExampleCodeIsVisible(MainPage.getSecondExampleCode);
   });
 });
