@@ -26,4 +26,4 @@ jobs:
         run: npx cypress install
 
       - name: Run Cypress tests and record
-        run: npx cypress run --headless
+        run: npx cypress run
