@@ -21,8 +21,8 @@ Optional (for running in Chrome/Edge):
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/geradot/telnyx-cypress-tests.git
-cd telnyx-cypress-tests
+git clone https://github.com/Geradot/Telnyx-Cypress-tests.git
+cd Telnyx-Cypress-tests
 ```
 
 2. Install dependencies:
