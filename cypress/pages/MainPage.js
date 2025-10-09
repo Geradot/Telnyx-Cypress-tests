@@ -53,10 +53,6 @@ class MainPage extends BasePage {
       .eq(0);
   }
 
-  checkExampleCodeIsVisible(fn) {
-    fn().should("be.visible");
-  }
-
   checkCountItemsInAccordion() {
     this.getAccordion().should("have.length", 6);
   }

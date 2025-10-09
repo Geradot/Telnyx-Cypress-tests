@@ -60,11 +60,9 @@ describe("Testing Telnyx.com", () => {
     MainPage.checkTabText(lastValue.description);
   });
 
-  it.only("TC-5: Clicking on the arrow reveals the next code example", () => {
-    // MainPage.checkExampleCodeIsVisible(MainPage.getFirstExampleCode);
+  it("TC-5: Clicking on the arrow reveals the next code example", () => {
     MainPage.getFirstExampleCode().should("be.visible");
     MainPage.getRightArrow().should("be.visible").click();
-    // MainPage.checkExampleCodeIsVisible(MainPage.getSecondExampleCode);
     if (Cypress.env("CI")) {
       cy.wait(500);
     }
