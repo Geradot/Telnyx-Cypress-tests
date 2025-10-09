@@ -1,0 +1,18 @@
+{
+  "main": "/",
+  "signup": "/sign-up",
+  "contact us": "/contact-us",
+  "navigation": {
+    "products": {
+      "title": "Products",
+      "subMenu": {
+        "voice": {
+          "voice ai": {
+            "url": "/products/voice-ai",
+            "title": "Voice AI"
+          }
+        }
+      }
+    }
+  }
+}
