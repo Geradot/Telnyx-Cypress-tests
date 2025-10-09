@@ -63,6 +63,8 @@ describe("Testing Telnyx.com", () => {
   it("TC-5: Clicking on the arrow reveals the next code example", () => {
     MainPage.checkExampleCodeIsVisible(MainPage.getFirstExampleCode);
     MainPage.getRightArrow().should("be.visible").click();
-    MainPage.checkExampleCodeIsVisible(MainPage.getSecondExampleCode);
+    MainPage.checkExampleCodeIsVisible(MainPage.getSecondExampleCode).should(
+      "be.visible"
+    );
   });
 });

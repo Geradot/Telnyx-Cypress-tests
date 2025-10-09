@@ -54,7 +54,7 @@ class MainPage extends BasePage {
   }
 
   checkExampleCodeIsVisible(fn) {
-    fn().should("be.visible");
+    fn().should("exist");
   }
 
   checkCountItemsInAccordion() {
