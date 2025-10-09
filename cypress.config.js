@@ -9,5 +9,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    env: {
+      CI: process.env.CI === "true",
+    },
   },
 });

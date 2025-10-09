@@ -65,6 +65,9 @@ describe("Testing Telnyx.com", () => {
     MainPage.getFirstExampleCode().should("be.visible");
     MainPage.getRightArrow().should("be.visible").click();
     // MainPage.checkExampleCodeIsVisible(MainPage.getSecondExampleCode);
+    if (Cypress.env("CI")) {
+      cy.wait(500);
+    }
     MainPage.getSecondExampleCode().should("be.visible");
   });
 });
