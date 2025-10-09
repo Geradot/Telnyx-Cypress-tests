@@ -2,7 +2,7 @@
 
 ## 1️⃣ Summary of repo
 
-This repository contains automated **end-to-end tests** for Telnyx.com using **Cypress**.
+This repository contains automated desktop (configurable) **end-to-end tests** for Telnyx.com using **Cypress**.
 Tests follow the **Page Object Model (POM)** structure to improve maintainability and readability.
 Tests include: navigation, UI validation, and functional flows for main site features.
 

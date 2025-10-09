@@ -1,6 +1,6 @@
 import pages from "../fixtures/pages.json";
 import roles from "../fixtures/roles.json";
-import capabilities from "../fixtures/capabilites.json";
+import capabilities from "../fixtures/capabilities.json";
 import MainPage from "../pages/MainPage";
 import VoiceAi from "../pages/Products/VoiceAi";
 
