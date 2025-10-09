@@ -67,8 +67,9 @@ class MainPage extends BasePage {
 
   checkActiveTabInAccordion(index) {
     this.getAccordion()
-      .eq(index)
       .should("exist")
+      .should("be.visible")
+      .eq(index)
       .and("have.attr", "aria-selected", "true")
       .and("have.attr", "data-state", "active");
   }
