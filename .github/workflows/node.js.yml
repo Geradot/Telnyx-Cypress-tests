@@ -24,9 +24,14 @@ jobs:
 
       - name: Install Cypress
         run: npx cypress install
+        
 
-      - name: Run Cypress tests and record
-        run: npx cypress run
+      - name: Run Cypress tests
+        run: npx cypress run --browser chrome --headless
+
+      - name: Check allure-results
+        run: ls -la allure-results
+
 
 
       - name: Setup Java for Allure
