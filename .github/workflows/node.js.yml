@@ -29,11 +29,6 @@ jobs:
       - name: Run Cypress tests
         run: npx cypress run --browser chrome --headless
 
-      - name: Check allure-results
-        run: ls -la allure-results
-
-
-
       - name: Setup Java for Allure
         if: always()
         uses: actions/setup-java@v3
@@ -41,9 +36,9 @@ jobs:
           distribution: temurin
           java-version: 25
 
-      - name: Install Allure CLI
+      - name: Install Allure CLI + allure-cypress
         if: always()
-        run: npm install -g allure-commandline
+        run: npm install -g allure-commandline allure-cypress
 
       - name: Generate Allure Report
         if: always()
