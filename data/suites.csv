@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11632","TC-1: Clicking the 'Start building for free' button opens the registration page","Testing Telnyx.com","Sun Oct 19 19:32:00 UTC 2025","passed","Sun Oct 19 19:32:12 UTC 2025","","","",""
+"","2054","TC-3: Clicking the 'Contact us' link opens it","Testing Telnyx.com","Sun Oct 19 19:32:14 UTC 2025","passed","Sun Oct 19 19:32:16 UTC 2025","","","",""
+"","1584","TC-2: Changing the Role also changes the spoken text in the 'Text to speech' tab","Testing Telnyx.com","Sun Oct 19 19:32:12 UTC 2025","passed","Sun Oct 19 19:32:14 UTC 2025","","","",""
+"","2038","TC-4: Clicking on a collapsible element reveals hidden text","Testing Telnyx.com","Sun Oct 19 19:32:17 UTC 2025","passed","Sun Oct 19 19:32:19 UTC 2025","","","",""
+"","1935","TC-5: Clicking on the arrow reveals the next code example","Testing Telnyx.com","Sun Oct 19 19:32:19 UTC 2025","passed","Sun Oct 19 19:32:21 UTC 2025","","","",""
